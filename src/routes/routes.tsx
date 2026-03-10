@@ -4,6 +4,7 @@ import UseReducerPage from "@/pages/reducer";
 import ReduxToolkitPage from "@/pages/redux";
 import ProductDetail from "@/pages/redux/product-detail";
 import { store } from "@/pages/redux/store/store";
+import ZustandPage from "@/pages/zustand";
 import { Provider } from "react-redux";
 
 export const ROUTES = [
@@ -35,5 +36,10 @@ export const ROUTES = [
         <ProductDetail />
       </Provider>
     ),
+  },
+  {
+    path: "zustand",
+    name: "Zustand Store",
+    component: <ZustandPage />,
   },
 ];
