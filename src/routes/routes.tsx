@@ -4,6 +4,7 @@ import UseReducerPage from "@/pages/reducer";
 import ReduxToolkitPage from "@/pages/redux";
 import ProductDetail from "@/pages/redux/product-detail";
 import { store } from "@/pages/redux/store/store";
+import SupabasePage from "@/pages/supabase";
 import ZustandPage from "@/pages/zustand";
 import { Provider } from "react-redux";
 
@@ -41,5 +42,10 @@ export const ROUTES = [
     path: "zustand",
     name: "Zustand Store",
     component: <ZustandPage />,
+  },
+  {
+    path: "supabase",
+    name: "Auth with Supabase",
+    component: <SupabasePage />,
   },
 ];
